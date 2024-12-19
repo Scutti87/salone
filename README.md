@@ -9,3 +9,21 @@ L'applicazione è stata creata durante il corso di Java frequentato. Primo proge
 
 struttura del progetto(Eclipse)
 ![index](Salone/WebContent/img/struttura.jpg)
+
+index
+![index](Salone/WebContent/img/index.jpg)
+
+appuntamenti a schermo(3 giorni)
+![index](Salone/WebContent/img/agenda.jpg)
+
+appuntamenti a schermo( +3 giorni)
+![index](Salone/WebContent/img/agenda3.jpg)
+
+sezione clienti
+![index](Salone/WebContent/img/clienti.jpg)
+
+sezione ricevute
+![index](Salone/WebContent/img/ricevute.jpg)
+
+sezione appuntamenti
+![index](Salone/WebContent/img/appuntamenti.jpg)
