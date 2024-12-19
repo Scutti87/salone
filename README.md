@@ -8,4 +8,4 @@ L'applicazione è stata creata durante il corso di Java frequentato. Primo proge
 (E' stato modificato piu volte in relazione ai nuovi argomenti del corso e messi in pratica).
 
 struttura del progetto(Eclipse)
-![index](src/main/resources/static/img/struttura.jpg)
+![index](Salone/WebContent/img/struttura.jpg)
