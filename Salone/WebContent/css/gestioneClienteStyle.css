@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+.back-button {
+	margin: 1% auto; font-size : 20px;
+	border: 2px solid black;
+	padding: 10px 20px;
+	background-color: white;
+	color: black;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+	font-size: 20px;
+}
+
+.back-button:hover {
+	background-color: lightgray;
+	transform: scale(1.1);
+}
+
+#titolo {
+	text-align: center;
+	color: #a40000;
+	padding: 5px;
+	text-shadow: 5px 5px 4px black;
+	margin: 0;
+	margin-top: -3%; /* Sposta il titolo verso l'alto */
+	font-size: 7rem;
+	font-weight: bold;
+	letter-spacing: 0.15em;
+}
+
+.button-container {
+    text-align: center; /* Centra i bottoni */
+    margin: 20px 0; /* Margine sopra e sotto i bottoni */
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centra i bottoni orizzontalmente */
+    flex-wrap: wrap; /* Permette il wrapping dei bottoni su più righe se necessario */
+}
+
+.action-button {
+    font-size: 20px;
+    border: 2px solid black;
+    padding: 10px 20px; /* Aumentato il padding per migliorare l'aspetto */
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px; /* Spazio tra i bottoni */
+    transition: background-color 0.3s;
+    display: inline-flex; /* Usa flexbox per il testo all'interno del bottone */
+    align-items: center; /* Centra verticalmente il contenuto */
+    justify-content: center; /* Centra orizzontalmente il contenuto */
+    min-width: 150px; /* Imposta una larghezza minima per tutti i bottoni */
+    height: 50px; /* Imposta un'altezza uniforme per tutti i bottoni */
+}
+
+.action-button:hover {
+    background-color: lightgray;
+    transform: scale(1.1);
+}
+
+.search-input {
+    font-size: 20px;
+    padding: 5px; /* Modificato il padding per una migliore visualizzazione */
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 60%; /* Larghezza della barra di ricerca */
+    height: 55%;
+}
+
+#stampaClienti{
+	width: 80%;
+}
+
+.form-ins-mod-eli {
+	width: 35%; /* Adjust width as needed */
+	margin: 2% auto; /* Centers the form horizontally */
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 2%;
+	box-shadow: 0 0 2% rgba(0, 0, 0, 0.1);
+	background-color: #f9f9f9;
+}
+
+/* Adjust the size and alignment of labels and inputs */
+.form-ins-mod-eli label, .form-ins-mod-eli input {
+	font-size: 1.5rem;
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+/* Style for the button */
+.form-ins-mod-eli button {
+	font-size: 1.5rem;
+	padding: 10px 20px;
+	margin-top: 20px;
+	width: 100%;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5%;
+	cursor: pointer;
+}
+
+.form-ins-mod-eli button:hover {
+	background-color: #45a049;
+	transform: scale(1.1);
+}
+
+.form-ins-mod-eli-stampa {
+	width: 95%; /* Adjust width as needed */
+	margin: 2% auto; /* Centers the form horizontally */
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 2%;
+	box-shadow: 0 0 2% rgba(0, 0, 0, 0.1);
+	background-color: #f9f9f9;
+}
+
+/* Adjust the size and alignment of labels and inputs */
+.form-ins-mod-eli-stampa label, .form-ins-mod-eli input {
+	font-size: 1.5rem;
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+/* Style for the button */
+.form-ins-mod-eli-stampa button {
+	font-size: 1.5rem;
+	padding: 10px 20px;
+	margin-top: 20px;
+	width: 100%;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5%;
+	cursor: pointer;
+}
+
+.form-ins-mod-eli-stampa button:hover {
+	background-color: #45a049;
+	transform: scale(1.1);
+}
+
+.table {
+	text-align: center; 
+    width: 100%;                  /* La tabella occupa il 100% della larghezza del contenitore */
+    border-spacing: 5% 10%;     /* Spaziatura tra le celle */
+    margin: 0 auto;                /* Per centrare la tabella nel suo contenitore */
+}
+
+.table th {
+    text-align: center;            /* Centra il testo di tutte le celle th */
+    padding: 0;   
+    border-spacing: 55% 10%;              /* Spaziatura interna tra testo e bordo della cella */
+}
+
+/* GESTIONE APPUNTAMENTO */
+
+.servizi-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonne uguali */
+    gap: 1%; /* Spazio tra le colonne e le righe */
+    width: 100%; /* Per utilizzare tutto lo spazio disponibile */
+}
+
+.servizi-container div {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    margin-left: 0.5%; /* Spazio tra il checkbox e il testo */
+}

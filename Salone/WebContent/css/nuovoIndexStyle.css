@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+/* Impostazioni generali per il layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.90;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #7aacff;
+}
+
+/* Header con bottoni centrati */
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4%; /* 10% dello schermo in altezza */
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* From Uiverse.io by vikiWayne */ 
+.button {
+  padding: 1.8em 3.6em; /* Increased padding for larger buttons */
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #2c9caf; /* Initial text color */
+  transition: all 500ms;
+  font-size: 8rem; /* Increased font size */
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #ffffff; /* White border */
+}
+
+.button:hover {
+  color: #8B0000; /* Dark red text color on hover */
+  transform: scale(1.1); /* Slightly larger on hover */
+  outline: 2px solid #ffffff; /* White border on hover */
+  box-shadow: 4px 5px 17px -4px #8B0000; /* Dark red shadow on hover */
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #98b8e9; /* Background color */
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.button:hover::before {
+  width: 250%; /* Expanding background animation */
+}
+
+
+/* Contenitore principale delle colonne */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-grow: 1; /* Occupa tutto lo spazio disponibile sotto l'header */
+    padding: 10px;
+    gap: 10px;
+}
+
+/* Stile delle colonne */
+.column {
+    flex: 1; /* Ogni colonna si adatta allo spazio disponibile */
+    height: calc(90vh - 30px); /* Il 90% dell'altezza dello schermo meno i margini */
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.column:nth-child(odd) {
+    background-color: rgba(240, 240, 240, 0.9);
+}
+
+
+
+.cont {
+    width: 100vw; /* Larghezza del contenitore uguale alla finestra */
+    overflow: hidden; /* Nasconde le immagini che escono dal contenitore */
+    position: relative; /* Necessario per il posizionamento assoluto */
+}
+
+.wrapper {
+    display: flex;
+    width: 300%; /* Permette a tutte le immagini di occupare spazio orizzontale */
+    animation: slide 15s ; 
+}
+
+.wrapper img {
+    width: 33.3333%; /* Ogni immagine occuperà un terzo dello spazio totale */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0); /* Prima immagine visibile */
+    }
+    20% {
+        transform: translateX(0); /* Prima immagine visibile */
+    }
+    25% {
+        transform: translateX(-100%); /* Passa alla seconda immagine */
+    }
+    45% {
+        transform: translateX(-100%); /* Seconda immagine visibile */
+    }
+    50% {
+        transform: translateX(-200%); /* Passa alla terza immagine */
+    }
+    70% {
+        transform: translateX(-200%); /* Terza immagine visibile */
+    }
+    75% {
+        transform: translateX(-100%); /* Torna alla seconda immagine */
+    }
+    100% {
+        transform: translateX(0); /* Riprende da capo */
+    }
+}

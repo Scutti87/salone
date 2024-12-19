@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+@keyframes slideTitle {
+    0% { transform: translateX(-100px); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(-100px); }
+}
+
+.bright-red-gradient {
+    background: linear-gradient(45deg, #ff0000, #ff3333, #ff4d4d, #ff6666);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 300% 300%;
+    animation: brightRedGradient 4s ease infinite;
+}
+
+@keyframes brightRedGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.animate-slide {
+    animation: slideTitle 4s ease-in-out infinite;
+}
+
+.shadow-title {
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5),
+                8px 8px 16px rgba(128, 128, 128, 0.5);
+}
+
+.special-hover {
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, #ffffff 50%, #7f1d1d 50%);
+    transition: background-position 1.5s ease-out, color 1.5s ease-out;
+}
+
+.special-hover:hover {
+    background-position: -100% 0;
+}

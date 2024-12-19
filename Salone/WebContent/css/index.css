@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@keyframes mirrorFloatLeft {
+    0% { transform: translateY(0) scale(1) rotate(0deg); }
+    50% { transform: translateY(-30px) scale(1.25) rotate(-5deg); }
+    100% { transform: translateY(0) scale(1) rotate(0deg); }
+}
+
+@keyframes mirrorFloatRight {
+    0% { transform: translateY(0) scale(1) rotate(0deg); }
+    50% { transform: translateY(-30px) scale(1.25) rotate(5deg); }
+    100% { transform: translateY(0) scale(1) rotate(0deg); }
+}
+
+@keyframes alternateZoom {
+    0% { transform: scale(1.3); }
+    50% { transform: scale(0.7); }
+    100% { transform: scale(1.3); }
+}
+
+.mirror-float-left {
+    animation: mirrorFloatLeft 8s ease-in-out infinite;
+}
+
+.mirror-float-right {
+    animation: mirrorFloatRight 8s ease-in-out infinite;
+}
+
+.alternate-zoom {
+    animation: alternateZoom 8s ease-in-out infinite;
+}
+
+.special-hover {
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, #ffffff 50%, #7f1d1d 50%);
+    transition: background-position 1.5s ease-out, color 1.5s ease-out;
+}
+
+.special-hover:hover {
+    background-position: -100% 0;
+}
